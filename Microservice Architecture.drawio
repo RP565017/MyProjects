@@ -134,6 +134,12 @@
         <mxCell id="VG44S-9KpQZqmGeBojD9-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:1000/1*Ge_3VrVfKOnVIv7OdLXlog.jpeg;" vertex="1" parent="1">
           <mxGeometry x="-20" y="130" width="1087.79" height="611.34" as="geometry" />
         </mxCell>
+        <mxCell id="VG44S-9KpQZqmGeBojD9-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:1000/1*ZhEFIo3v6lmnyhc8gI2foQ.png;" vertex="1" parent="1">
+          <mxGeometry x="20" y="800" width="1000" height="422" as="geometry" />
+        </mxCell>
+        <mxCell id="VG44S-9KpQZqmGeBojD9-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://media.geeksforgeeks.org/wp-content/uploads/20240726145939/Collections-in-Java.png;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1260" width="1080" height="540" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
