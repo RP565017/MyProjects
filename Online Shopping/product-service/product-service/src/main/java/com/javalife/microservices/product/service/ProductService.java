@@ -3,6 +3,7 @@ package com.javalife.microservices.product.service;
 
 import com.javalife.microservices.product.dto.ProductRequest;
 import com.javalife.microservices.product.dto.ProductResponse;
+import com.javalife.microservices.product.exception.DuplicateKeyException;
 import com.javalife.microservices.product.model.Product;
 import com.javalife.microservices.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
@@ -27,8 +28,7 @@ public class ProductService {
 
     private final ProductRepository productRepository;
 
-    public List<ProductResponse> createProduct(List<ProductRequest> productRequests) {
-
+    public List<ProductResponse> createProduct(List<ProductRequest> productRequests) throws DuplicateKeyException {
         List<ProductResponse> responses = new ArrayList<>();
 
         for (ProductRequest productRequest : productRequests) {
@@ -58,7 +58,6 @@ public class ProductService {
     }
 
     public ResponseEntity<Product> updateProduct(ProductRequest productRequest) {
-
         Optional<Product> optionalProduct = productRepository.findByName(productRequest.name());
 
         if (optionalProduct.isEmpty()) {
@@ -78,22 +77,15 @@ public class ProductService {
         return ResponseEntity.status(HttpStatus.CREATED).body(product);
     }
 
-
-
     public void deleteProduct(String id) {
-
         productRepository.deleteById(id);
-
         LOGGER.info("Product with ID {} deleted successfully", id);
     }
 
     public void deleteProductByName(String name) {
-
         productRepository.deleteByName(name);
-
         LOGGER.info("Product with Name {} deleted successfully", name);
     }
-
 
     public List<ProductResponse> getAllProducts() {
         List<ProductResponse> productResponses = productRepository.findAll()
@@ -107,5 +99,4 @@ public class ProductService {
         return productResponses;
     }
 }
-
 

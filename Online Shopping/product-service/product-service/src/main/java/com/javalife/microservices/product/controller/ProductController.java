@@ -48,13 +48,13 @@ public class ProductController {
             }
         } catch (DuplicateKeyException e){
             LOGGER.error("Duplicate Product: ", e);
-            throw new DuplicateProductException("Product with the same key already exists.");
+            throw new RuntimeException("Product with the same key already exists.");
         } catch (UncategorizedMongoDbException e) {
             LOGGER.error("Mongo error: ", e);
-            throw new DatabaseException("Unexpected database error occurred.");
+            throw new RuntimeException("Unexpected database error occurred.");
         }catch (Exception e) {
             LOGGER.error("Unexpected error: ", e);
-            throw e;  // handled by global handler
+            throw new RuntimeException(e);  // handled by global handler
 
         }
 }
@@ -68,10 +68,6 @@ public ResponseEntity<Object> updateProduct(@RequestBody ProductRequest productR
             LOGGER.info("Product updated successfully");
             return ResponseEntity.status(HttpStatus.OK).body("Product updated successfully");
 
-
-        } catch (ResourceNotFoundException e) {
-        LOGGER.warn("Update failed - not found: {}", e.getMessage());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
 
         } catch (Exception e) {
         LOGGER.error("Product update failed: ", e);
