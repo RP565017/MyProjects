@@ -229,11 +229,26 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="PA1292pvMIB6CtJ1MwQV" name="Page-4">
+  <diagram id="PA1292pvMIB6CtJ1MwQV" name="Java Process Memory ">
     <mxGraphModel dx="1426" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="760" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="130" y="200" width="580" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="135" y="340" width="580" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="135" y="480" width="580" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="135" y="630" width="580" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
