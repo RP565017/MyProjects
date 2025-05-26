@@ -234,19 +234,19 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-1" value="GC Managed Memory Spaces&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="120" width="760" height="670" as="geometry" />
         </mxCell>
-        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-3" value="Java Heap" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-3" value="Java Heap( Java Objects)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
           <mxGeometry x="130" y="200" width="580" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-4" value="MetaSpace &amp;amp; Compressed Class Space / Perm Gen" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-4" value="MetaSpace &amp;amp; Compressed Class Space / Perm Gen( Storage for classes and metaspaces including dynamically generated classess through reflection )" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
           <mxGeometry x="135" y="340" width="580" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-5" value="Code Cache" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-5" value="Code Cache( Storage for JIT complied code)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
           <mxGeometry x="135" y="480" width="580" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-6" value="INternal JVM allocation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+        <mxCell id="C2NqWDeL0QiQ-mlgJEmR-6" value="INternal JVM allocation(Memory allocated for internal functioning of JVM such as the GC, complier and runtime subsystems) Loaded Jars and native libraries . Thread and Thread local storage and so on" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
           <mxGeometry x="135" y="630" width="580" height="80" as="geometry" />
         </mxCell>
       </root>
