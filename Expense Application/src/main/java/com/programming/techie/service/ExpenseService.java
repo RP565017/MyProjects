@@ -20,16 +20,16 @@ public class ExpenseService {
     public ResponseEntity<Expense> getAllExpense(){
        return ResponseEntity.ok(expenseRepository.findAll().get(0));
     }
-    public void updateExpense( Expense expense){
-        Expense SavedExpense = expenseRepository
+    public void updateExpense(Expense expense) {
+        Expense savedExpense = expenseRepository
                 .findById(expense.getId())
                 .orElseThrow(() -> new RuntimeException(
                         String.format("Cant FInd Expense By Id %s", expense.getId())));
 
-        SavedExpense.setExpenseName(expense.getExpenseName());
-        SavedExpense.setExpenseCategory(expense.getExpenseCategory());
-        SavedExpense.setExpenseAmount(expense.getExpenseAmount());
-        expenseRepository.save(expense);
+        savedExpense.setExpenseName(expense.getExpenseName());
+        savedExpense.setExpenseCategory(expense.getExpenseCategory());
+        savedExpense.setExpenseAmount(expense.getExpenseAmount());
+        expenseRepository.save(savedExpense);
     }
     public void deleteExpense(String id){
         expenseRepository.deleteById(id);
